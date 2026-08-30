@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Beekeeping Guides</title>
+<style>
+  :root {
+    --bg-dark: #12201a;       /* dark green/black from your screenshot */
+    --card: #ffffff;          /* card color */
+    --btn-color: #2f8f6f;     /* teal-green outline/text on View & Download */
+    --text-light: #f4f1ea;
+    --text-muted: #a9c2b6;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+    background: var(--bg-dark);
+    color: var(--text-light);
+  }
+
+  .hero {
+    position: relative;
+    height: 220px;
+    background-image:
+      linear-gradient(to bottom, rgba(18,32,26,0.1) 0%, var(--bg-dark) 100%),
+      url('hero-honeycomb.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+
+  .badge {
+    position: absolute;
+    left: 50%;
+    bottom: -48px;
+    transform: translateX(-50%);
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    background: var(--card);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 44px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.35);
+  }
+
+  .content {
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 62px 20px 40px;
+    text-align: center;
+  }
+
+  h1 {
+    margin: 0 0 4px;
+    font-size: 24px;
+    color: var(--text-light);
+  }
+
+  .subtitle {
+    margin: 0 0 28px;
+    color: var(--text-muted);
+    font-size: 14px;
+  }
+
+
+  .pdf-list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .pdf-card {
+    background: var(--card);
+    border-radius: 30px;
+    padding: 16px 20px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    min-height: 60px;
+  }
+
+  .pdf-card-title {
+    font-weight: 600;
+    font-size: 14.5px;
+    margin: 0;
+    color: #1c1c1c;
+    flex: 1;
+  }
+
+  .pdf-card-actions {
+    display: flex;
+    gap: 8px;
+    flex-shrink: 0;
+  }
+
+  .pdf-btn {
+    text-align: center;
+    padding: 7px 16px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    border: 1.5px solid var(--btn-color);
+    color: var(--btn-color);
+    background: transparent;
+    white-space: nowrap;
+  }
+
+  footer {
+    margin-top: 36px;
+    font-size: 12px;
+    color: var(--text-muted);
+  }
+</style>
+</head>
+<body>
+
+  <div class="hero">
+    <div class="badge">
+      <img src="emblem.svg" style="width: 120px; height: auto;"alt="logo">
+    </div>
+  </div>
+
+  <div class="content">
+    <h1>Ministry of Natural Resources and Tourism</h1>
+    <h2 style="font-size: 18px;">Forestry and Beekeeping Department</h2>
+    <p class="subtitle">View or download each guide below.</p>
+
+    <div class="pdf-list">
+
+      
+      <div class="pdf-card">
+        <p class="pdf-card-title">Beekeeping Act 2002</p>
+        <div class="pdf-card-actions">
+          <a class="pdf-btn" href="Beekeeping-Act-2002.pdf" target="_blank">View</a>
+          <a class="pdf-btn" href="Beekeeping-Act-2002.pdf" download>Download</a>
+        </div>
+      </div>
+      
+
+      <div class="pdf-card">
+        <p class="pdf-card-title">Beekeeping Policy 1998</p>
+        <div class="pdf-card-actions">
+          <a class="pdf-btn" href="Beekeeping-Policy-1998.pdf" target="_blank">View</a>
+          <a class="pdf-btn" href="Beekeeping-Policy-1998.pdf" download>Download</a>
+        </div>
+      </div>
+
+      <div class="pdf-card">
+        <p class="pdf-card-title">Beekeeping Policy Implementation Strategy</p>
+        <div class="pdf-card-actions">
+          <a class="pdf-btn" href="Beekeeping-Policy-Implementation-Strategy(2021-2031).pdf" target="_blank">View</a>
+          <a class="pdf-btn" href="Beekeeping-Policy-Implementation-Strategy(2021-2031).pdf" download>Download</a>
+        </div>
+      </div>
+
+      <div class="pdf-card">
+        <p class="pdf-card-title">Beekeeping Sector Development Plan(Swahili Edition)</p>
+        <div class="pdf-card-actions">
+          <a class="pdf-btn" href="Beekeeping-Sector-Development-Plan.pdf" target="_blank">View</a>
+          <a class="pdf-btn" href="Beekeeping-Sector-Development-Plan.pdf" download>Download</a>
+        </div>
+      </div>
+
+    </div>
+
+    <footer>Scan the QR code anytime to return here</footer>
+    <div class="bottom-page-notice">
+      2026 © Wizara ya Maliasili na Utalii
+  </div>
+
+</body>
+</html>
